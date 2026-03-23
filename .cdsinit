@@ -1,0 +1,16 @@
+;cyclic SKILL for schematic editor
+schSetCmdOption( schStretchForm 'snapMode list( "anyAngle" "orthogonal" ) 2 "toggle snapMode" )
+schSetCmdOption( schMoveForm 'snapMode list( "anyAngle" "orthogonal" ) 2 "toggle snapMode" )
+schSetCmdOption( schCopyForm 'snapMode list( "anyAngle" "orthogonal" ) 2 "toggle snapMode" )
+schSetCmdOption( schCreateNoteShapeForm 'shape list("line" "rectangle" "polygon") 2 "toggle noteShape" )
+
+schSetCmdOption(schSymStretchForm 'snapMode list("anyAngle" "orthogonal") 2 "toggle snapMode")
+
+;schShiftCmdOption(schMoveForm 'snapMode list( "anyAngle" "orthogonal" ) 2 "toggle snapMode" )
+;schShiftCmdOption(schSymStretchForm 'snapMode list("anyAngle" "orthogonal") 2 "toggle snapMode")
+;schShiftCmdOption(schCreateNoteShapeForm 'snapMode list("line" "rectangle" "polygon") 2 "toggle noteShape")
+
+schSetAndLoadTsgTemplateType("other" "/user/yunseong.jo/myskill/mysymbol.tsg")
+envSetVal("ui" "ciwNameCompletion" 'cyclic "Manual")
+envSetVal("ui" "ciwNameCompletionKey" 'cyclic "Tab")
+envSetVal("ui" "ciwNameCompletionStyle" 'cyclic "Functions First")
