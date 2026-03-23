@@ -1,0 +1,17 @@
+; local cadence environment setup
+;graphic					probeNetDisplayFlightLines 'string physical
+graphic                 probeNetDisplayFlightLines	string	"physical"
+cdba					dbAddCellNameToInstNamePrefix	boolean	nil
+cdsLibManager.customize	showDFIIWarning	boolean	nil
+cdsLibManager.main		showFilesOn	boolean	nil
+cdsLibManager.main		showCompressionDefault	boolean	nil
+cdsLibManager.main		showCategoriesOn	boolean	t
+cdsLibManager.main		showNonVirtuosoViewtypes	boolean	nil
+cdsLibManager.main		dblClickEditCellView	boolean  t
+cdsLibManager.main		showCategoriesOn	boolean	t
+schematic	noteJustify	cyclic	"centerCenter"
+schematic	symbolLabelJustify	cyclic	"centerCenter"
+schematic	schematicSelectFilter	string	"allSchObj instancePin"
+schematic                          stretchOverrideAreaPartialSelect                               boolean  t
+schematic                          stretchOverridePointPartialSelect                              boolean  t
+schematic ssgSortPins cyclic "geometric"
